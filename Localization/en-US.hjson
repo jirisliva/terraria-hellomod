@@ -1,0 +1,18 @@
+Mods: {
+	HelloMod: {
+		Items: {
+			SlunecniMec: {
+				DisplayName: Sluneční Meč
+				Tooltip:
+					'''
+					Meč ukovaný ze síly slunce
+					Zapaluje nepřátele při zásahu
+					[c/FF4500:Výstřelí ohnivou kouli při dostatku many]
+					'''
+			}
+		}
+
+		Projectiles.OhnivaKoule.DisplayName: Ohnivá Koule
+		NPCs.PriatelskyCestovatel.DisplayName: Přátelský Cestovatel
+	}
+}
