@@ -24,6 +24,9 @@ namespace HelloMod.Projectiles
             Projectile.width = 14;
             Projectile.height = 14;
 
+            // --- Animace (4 snímky ve spritesheetu) ---
+            Main.projFrames[Projectile.type] = 4;
+
             // --- AI ---
             // ProjAIStyleID.Arrow = rovný let, gravity = false
             Projectile.aiStyle = ProjAIStyleID.Arrow;
@@ -41,7 +44,7 @@ namespace HelloMod.Projectiles
             Projectile.timeLeft = 300;    // zanikne po 5 sekundách
 
             // --- Vizuál ---
-            Projectile.light = 0.5f;      // vydává oranžové světlo
+            Projectile.light = 0.9f;      // vydává oranžové světlo
             Projectile.alpha = 20;        // mírná průhlednost
         }
 
@@ -50,6 +53,13 @@ namespace HelloMod.Projectiles
         /// </summary>
         public override void AI()
         {
+            // Animace – přepínáme snímky každých 5 tiků
+            if (++Projectile.frameCounter >= 5)
+            {
+                Projectile.frameCounter = 0;
+                Projectile.frame = (Projectile.frame + 1) % Main.projFrames[Projectile.type];
+            }
+
             // Každý tik přidáme malou jiskřičku za projektilem (trail efekt)
             if (Main.rand.NextBool(3)) // pravděpodobnost 1/3 každý tik
             {

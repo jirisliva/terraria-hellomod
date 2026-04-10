@@ -10,6 +10,26 @@ Mods: {
 					[c/FF4500:Výstřelí ohnivou kouli při dostatku many]
 					'''
 			}
+
+			MoonSword: {
+				DisplayName: Moon Sword
+				Tooltip: ""
+			}
+
+			Sunstone: {
+				DisplayName: Sunstone
+				Tooltip: ""
+			}
+
+			SunstoneBar: {
+				DisplayName: Sunstone Bar
+				Tooltip: ""
+			}
+
+			SunSword: {
+				DisplayName: Sun Sword
+				Tooltip: ""
+			}
 		}
 
 		Projectiles.OhnivaKoule.DisplayName: Ohnivá Koule

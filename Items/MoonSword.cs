@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 namespace HelloMod.Items
 {
     /// <summary>
-    /// Sluneční Meč – melee zbraň středně pokročilé úrovně.
+    /// melee zbraň středně pokročilé úrovně.
     ///
     /// Vlastnosti:
     ///   - 75 poškození (melee)
@@ -14,7 +14,7 @@ namespace HelloMod.Items
     ///   - Recept: 15× Meteorite + 10× Obsidian + 5× Hellstone Bar
     ///             na Mythril / Orichalcum Anvilě
     /// </summary>
-    public class SlunecniMec : ModItem
+    public class MoonSword : ModItem
     {
         // Jméno a tooltip jsou v Localization/en-US.hjson (tModLoader 1.4.4+)
 
