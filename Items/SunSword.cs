@@ -26,7 +26,7 @@ namespace HelloMod.Items
 
             // --- Bojové vlastnosti ---
             Item.damage = 75;
-            Item.DamageType = DamageClass.Melee;
+            Item.DamageType = DamageClass.Magic;
             Item.knockBack = 6f;
             Item.crit = 8;              // +8 % kritický úder (přičte se k základu hráče)
 

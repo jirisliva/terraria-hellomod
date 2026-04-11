@@ -1,4 +1,4 @@
-author = Quazilisk
-version = 0.1.0
+author = quazilisk & selkareh1
+version = 0.1.5
 displayName = Hello Mod
 homepage = https://forums.terraria.org

@@ -30,8 +30,19 @@ Mods: {
 				DisplayName: Sun Sword
 				Tooltip: ""
 			}
+
+			MeteoriteforgeNotLit: {
+				DisplayName: Meteoriteforge Not Lit
+				Tooltip: ""
+			}
+
+			Meteoriteforge: {
+				Tooltip: ""
+				DisplayName: Meteoriteforge
+			}
 		}
 
+		Tiles.MeteorforgeTile.MapEntry: Meteorite Forge
 		Projectiles.OhnivaKoule.DisplayName: Ohnivá Koule
 		NPCs.PriatelskyCestovatel.DisplayName: Přátelský Cestovatel
 	}

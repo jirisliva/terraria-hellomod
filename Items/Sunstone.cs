@@ -17,6 +17,8 @@ namespace HelloMod.Items
             // --- Hodnota a vzácnost ---
             Item.value = Item.buyPrice(gold: 3);
             Item.rare = ItemRarityID.Orange;
+
+            Item.maxStack = 999; // Set the maximum stack size
         }
 
         public override void AddRecipes()
@@ -24,9 +26,9 @@ namespace HelloMod.Items
             Recipe recipe = CreateRecipe();
 
             // Ingredience
-            recipe.AddIngredient(ItemID.Meteorite, 10);     // 15× Meteorite
+            recipe.AddIngredient(ItemID.Meteorite, 4);     // 15× Meteorite
             recipe.AddIngredient(ItemID.Torch, 5);      // 5x Torch
-            recipe.AddIngredient(ItemID.Hellstone, 10);   // 10× Hellstone
+            recipe.AddIngredient(ItemID.Hellstone, 4);   // 10× Hellstone
 
             // Pracovní stanice – funguje na Hellforge
             recipe.AddTile(TileID.Hellforge);

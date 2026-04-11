@@ -4,7 +4,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Building and running
 
-tModLoader mods are built and loaded from within Terraria itself — there is no standalone CLI build command. To build:
+### CLI build (compilation check)
+
+Run `dotnet build` from the project root to compile the mod and catch code errors without launching Terraria:
+
+```sh
+dotnet build
+```
+
+This compiles the C# code successfully, but the tModLoader packaging step will fail on macOS with a missing `FNA3D` native library error — this is expected and can be ignored. Use this for quick syntax/type checking only.
+
+### Full build (in-game)
+
+To produce a `.tmod` package and test in-game, build from within Terraria:
 
 1. Launch Terraria with tModLoader installed.
 2. Go to **Workshop → Develop Mods → HelloMod → Build**.
